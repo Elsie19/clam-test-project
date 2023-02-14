@@ -16,7 +16,7 @@ function potato() {
     echo "potato"
 }
 
-msg '-n Hello world!'
+msg 'Hello world!'
 
 if ! prompt.yes_no "Do you like crayfish" like_crayfish; then
     err "Failed to get input!"
