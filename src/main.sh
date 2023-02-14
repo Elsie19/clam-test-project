@@ -13,7 +13,7 @@
 # @example
 #     potato
 function potato() {
-	echo "potato"
+    echo "potato"
 }
 
 msg '-n Hello world!'

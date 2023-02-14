@@ -9,5 +9,5 @@
 #
 # @arg $1 string A value to print
 function potato.potato() {
-	echo "Hello ${1:?}"
+    echo "Hello ${1:?}"
 }
