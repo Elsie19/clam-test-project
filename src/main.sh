@@ -16,6 +16,11 @@ function potato() {
     echo "potato"
 }
 
+if assert.is_root; then
+	err "WHY YOU ROOT!"
+	exit 1
+fi
+
 msg 'Hello world!'
 
 if ! prompt.yes_no "Do you like crayfish" like_crayfish; then
@@ -25,6 +30,6 @@ fi
 
 # Note the `:?` in case any bugs slip through that leave the variable empty
 case "${like_crayfish:?}" in
-    "Y") msg "You do like crayfish" && exit 0 ;;
-    "N") msg "You don't like crayfish" && exit 1 ;;
+    "Y") msg "You do like crayfish" ;;
+    "N") msg "You don't like crayfish" ;;
 esac
